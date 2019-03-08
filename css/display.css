@@ -1,0 +1,18 @@
+span{
+    background-color: yellow;
+    width:100px;
+    height:100px;
+    margin:10px;
+    display:inline-block;
+}
+
+p.sized{
+    width:100px;
+    background-color: gold;
+    margin:15px;
+}
+
+div.layout{
+    display:flex;
+    /* FLexbox (CSS layout) */
+}

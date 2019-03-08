@@ -1,0 +1,63 @@
+/* Type selector */
+ol{
+border-color:yellow;
+border-width:1px;
+border-style:solid;
+}
+/* ID selector: ID & class are case sensitive */
+ol#secondList{
+    border-color:brown;
+}
+/* Class Selector */
+.goldBack{
+    background:gold;
+}
+.goldBack{
+    background:red;
+}
+
+
+/* Pseudo selector */
+ol:nth-child(1){
+    background:olive;
+}
+h4:hover{
+    background:olive;
+}
+input:invalid{
+    background:tomato;
+}
+/* Grouped selector */
+h1,h2,h4,ol{
+    color:blue;
+}
+/* Child Selector : Direct children*/
+/* <p><a> <a></a> </a></p> */
+p>a:hover{
+color:aquamarine;
+}
+/* Descendent Selector */
+p a:hover{
+    color:olivedrab;
+}
+
+/*Adjacent Siblings Selector: +  */
+.Greeting{
+    display:none;
+}
+a:hover+div{
+    display:block;
+    color:blue;
+}
+/* General Siblings: ~ */
+ a:hover~div{
+   color:brown;
+} 
+/* Universal selector : to everybody*/
+*{
+    /* font-size:12px; 
+    for resetting browser defaults */
+}
+/* CSS Specificity: style precedence */
+
+

@@ -1,0 +1,22 @@
+p#in{
+    width:100px;
+    height:100px;
+    background:gold;
+    padding:10px;
+    margin:30px;
+    outline-color:rgba(59, 59, 165, 0.328);
+    outline-style:solid;
+    outline-width:100px;
+}
+p.out{
+    color:red;
+    width:180px;    
+}
+input{
+    border-style:none;
+    border-bottom-style:solid;
+}
+input:focus{
+    outline-style:none;  
+    border-left-style:solid;  
+}
