@@ -17,18 +17,24 @@
 <p class="myclass">PARAGRAPH Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, distinctio?</p>
 <hr>
 <div id="abc" style="display:none;">THIS IS HIDDEN</div>
-<button onclick="myfn()">Check</button>
+<button id="check">Check</button>
 
 <script>
-  function myfn(){
+ // function myfn(){
       //$('#mydiv').hide('slow');
     //   show() toggle() slideUp() slideDown() slideToggle()
     /*   fadeIn() fadeOut() fadeToggle()     
 
     */
-   $('#abc').slideToggle(500);
+ //  $('#abc').slideToggle(500);
  // $('h1').fadeToggle(1000).hide('slow').show('slow').slideUp('slow').slideDown('slow');
-  }
+ //}
+// $('button#check').click(function(){
+//   $('h1').slideToggle();
+// });//dblclick keyup mouseenter mouseleave focus blur hover
+$('button#check').on('click',function(){
+  $('h1').slideToggle();
+})
 
 </script>
 </body>

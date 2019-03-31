@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/faq.css">
 </head>
 <body>
-    <H1>Frequently Asked Questions</H1>
+    <H1>Frequently Asked Questions <span>some text</span></H1>
     <ol id="faqList">
         <li>About UoH
             <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit voluptatum, sed voluptates explicabo cumque at eveniet. Ea aliquid quo culpa.</div>
@@ -25,5 +25,16 @@
         </li>
 
     </ol>
+
+    <script>
+    $('#faqList>li').click(function(){
+        $(this).find('div').slideToggle();
+        // $(this).children().slideToggle();
+    //  alert(  $('h1').css({"color":"red","border-style":"solid"}));
+         //alert($('h1').text());
+       // $('h1').toggleClass('myclass');
+});
+    //jQuery HTML: .val(); .text(); .html(); .css() addClass() toggleClass() removeClass() parent() parents()
+    </script>
 </body>
 </html>
