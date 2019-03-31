@@ -1,0 +1,19 @@
+#tbl{
+    border:0px solid brown;
+    width:80%;
+    text-align:left;
+    border-collapse: collapse;
+    margin-top:10px;
+}
+#tbl tr:nth-child(odd){
+    background-color:#bbb;
+}
+
+#tbl tr:first-child{
+    background-color:green;
+    color:white;
+}
+
+#tbl tr>td, #tbl tr>th{
+    padding:5px;
+}
