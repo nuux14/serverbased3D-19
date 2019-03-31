@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"  href="css/jqueryStyles.css">
+    <script src="js/jqueryScripts.js"></script>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <h1>WELCOME TO MY SITE</h1>
+    <div id="mydiv">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quam hic quod reiciendis dolores assumenda consequuntur, ipsum molestiae officiis! Porro?</div>
+    <hr>
+    <div class="myclass">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit aliquam excepturi nulla earum et eaque corrupti necessitatibus mollitia velit totam?</div>
+<hr>
+<div>Lorem ipsum dolor sit amet.</div>
+<p class="myclass">PARAGRAPH Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, distinctio?</p>
+<hr>
+<div id="abc" style="display:none;">THIS IS HIDDEN</div>
+<button onclick="myfn()">Check</button>
+<script>
+
+    //Plain js  ~ vanilla js : querySelector('.myclass');
+  function myfn(){
+   // $('#mydiv').hide();
+   //$('div.myclass').hide();
+   $('div#abc').show();
+   $('p.myclass').toggle();
+   /*/jQuery Effects: hide() show() toggle() 
+          fadeIn() fadeOut() slideDown() slideUp() 
+          fadeToggle() slideToggle()
+
+   */
+    
+  }
+</script>
+</body>
+</html>

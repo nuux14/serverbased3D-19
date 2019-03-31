@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+        <h1>WELCOME TO MY SITE</h1>
+    <div id="mydiv">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quam hic quod reiciendis dolores assumenda consequuntur, ipsum molestiae officiis! Porro?</div>
+    <hr>
+    <div class="myclass">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit aliquam excepturi nulla earum et eaque corrupti necessitatibus mollitia velit totam?</div>
+<hr>
+<div>Lorem ipsum dolor sit amet.</div>
+<p class="myclass">PARAGRAPH Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, distinctio?</p>
+<hr>
+<div id="abc" style="display:none;">THIS IS HIDDEN</div>
+<button onclick="myfn()">Check</button>
+
+<script>
+  function myfn(){
+      //$('#mydiv').hide('slow');
+    //   show() toggle() slideUp() slideDown() slideToggle()
+    /*   fadeIn() fadeOut() fadeToggle()     
+
+    */
+   $('#abc').slideToggle(500);
+ // $('h1').fadeToggle(1000).hide('slow').show('slow').slideUp('slow').slideDown('slow');
+  }
+
+</script>
+</body>
+</html>
