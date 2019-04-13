@@ -1,4 +1,6 @@
-function addUser(){
+ import {User,a} from "./dom2.js";
+var btn=document.getElementById('btnAdd');
+btn.addEventListener('click', function(){
     var name=document.getElementById('txtName');
     var email=document.querySelector('input#txtEmail');
 
@@ -13,13 +15,10 @@ function addUser(){
    tbl.appendChild(tr);   
    var nuser= new User(name.value,email.value);
    usersCollection.push(nuser);
-   
+ // alert(a);
    name.value='';email.value='';
-}
+});
 
-var usersCollection=[];
+ export var usersCollection=[];
 
-function User(name, email){
- this.userName=name;
- this.userEmail=email;
-}
+//
